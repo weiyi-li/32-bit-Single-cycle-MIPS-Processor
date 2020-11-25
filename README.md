@@ -20,7 +20,7 @@ The machine code loading data in memory location Y(#7) to register Y(#7) is
 Opcode | RS | Rt | Immediate (offset address)  
 MIPS code: lw $7, 7($0)  
 The simulated waveform is demonstrated below.  
-![Image]()
+![Image](https://github.com/weiyi-li/32-bit-Single-cycle-MIPS-Processor/blob/master/Image/Test1.jpg)
 
 ### Test 2
 **Add the X and Y registers and store the result in the Z register.**  
@@ -31,7 +31,7 @@ The machine code adding data in register X(#6) and Y(#7) and storing the result 
 Opcode | RS | Rt | Rd | Shift amount | Function code  
 MIPS code: add $1, $6, $7  
 The simulated waveform is demonstrated below.  
-![Image]()  
+![Image](https://github.com/weiyi-li/32-bit-Single-cycle-MIPS-Processor/blob/master/Image/Test2.jpg)  
 
 ### Test 3
 **Store the data from the Z register into the Z memory location.**  
@@ -42,7 +42,7 @@ The machine code storing data to register Z(#1) from memory location Z(#1) is
 Opcode | RS | Rt | Immediate (offset address)  
 MIPS code: sw $1, 1($0)  
 The simulated waveform is demonstrated below.  
-![Image]()  
+![Image](https://github.com/weiyi-li/32-bit-Single-cycle-MIPS-Processor/blob/master/Image/Test3.jpg)  
 
 ### Test 4
 **Load the data in the Z memory location into the T register.**  
@@ -53,7 +53,7 @@ The machine code loading data in memory location Z(#1) to register T(#2) is
 Opcode | RS | Rt | Immediate (offset address)  
 MIPS code: lw $2, 1($0)  
 The simulated waveform is demonstrated below.  
-![Image]()
+![Image](https://github.com/weiyi-li/32-bit-Single-cycle-MIPS-Processor/blob/master/Image/Test4.jpg)
 
 ### Test 5
 **Simulate the operation of the BEQ instruction.**  
@@ -67,7 +67,7 @@ Therefore, the machine code of BEQ instruction is
 Opcode | RS | Rt | Immediate (offset address)  
 MIPS code: beq $1, $4, $2  
 The simulated waveform is demonstrated below.   
-![Image]()
+![Image](https://github.com/weiyi-li/32-bit-Single-cycle-MIPS-Processor/blob/master/Image/Test5.jpg)
 
 ### Test 6
 **Simulate the operation of the Jump instruction.**  
@@ -140,6 +140,7 @@ Therefore, the machine code of Jump instruction is
 Opcode | Immediate (offset address)   
 MIPS code: j 00101   
 The simulated waveform is demonstrated below.   
+![Image](https://github.com/weiyi-li/32-bit-Single-cycle-MIPS-Processor/blob/master/Image/Test6.jpg)
 
 ### Test 7
 **Make the processor correctly execute the Ori instruction.**  
@@ -177,7 +178,7 @@ Therefore, the machine code of BEQ instruction is
 Opcode | RS | Rt | Immediate (offset address)  
 MIPS code: ori $6, $7, 0000000000000000  
 The simulated waveform for Case 1 is demonstrated below.  
-![Image]()
+![Image](https://github.com/weiyi-li/32-bit-Single-cycle-MIPS-Processor/blob/master/Image/Test8a.jpg)
 
 As shown in the waveform, the data 0x00550000 in register #7 is the result of OR operation between 0x00550000 and external data 0x00000000. The additional Ori instruction is valid.
 
@@ -188,7 +189,7 @@ Therefore, the machine code of BEQ instruction is
 Opcode | RS | Rt | Immediate (offset address)  
 MIPS code: ori $6, $7, 1111111111111111  
 The simulated waveform for Case 2 is demonstrated below.  
-![Image]()
+![Image](https://github.com/weiyi-li/32-bit-Single-cycle-MIPS-Processor/blob/master/Image/Test8b.jpg)
 
 As shown in the waveform, the data 0x11111111 in register #7 is the result of OR operation between 0x00550000 and external data 0x11111111. The additional Ori instruction is valid.
 
@@ -249,3 +250,4 @@ By simulating with the machine code below, the waveform can be obtained.
 MIPS code: lw $6, 6($0)  
 100011 00000 00111 0000000000000111  
 Opcode | RS | Rt | Immediate (offset address)  
+![Image](https://github.com/weiyi-li/32-bit-Single-cycle-MIPS-Processor/blob/master/Image/Test9.jpg)
