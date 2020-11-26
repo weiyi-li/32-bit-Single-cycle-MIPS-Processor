@@ -104,7 +104,7 @@ output [31:0] ALUResultOut ,DReadData, X, Y, Z, T, PC;
 ```
 
 Meanwhile, additional assignments need to be added to the next instructions either.
-Introduce two new variables PCadd and PCOffseradd, which represent the subsequent variable of PC and PCOffset in the next instruction.
+Introduce two new variables PCadd and PCOffsetadd, which represent the subsequent variable of PC and PCOffset in the next instruction.
 ```markdown
 // Acquire the fields of the R_Format Instruction for clarity	
 assign {opcode, rs, rt, rd, shamt, funct} = Instruction;
